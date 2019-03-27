@@ -1,0 +1,28 @@
+
+<html lang="ptbr">
+	<head>
+		<title>Aula 01 - JS</title>
+		<script type="text/javascript">
+			var val = window.prompt("Digite um valor: ");
+			
+			console.log(val.toUpperCase());
+
+			console.log(val.split('').reverse().join(''));
+			var tam = val.length-1;
+			var ex2 = "";
+			while(tam > 0) {
+				ex2 += val.charAt(tam);
+				tam--;
+			}
+
+			console.log(val.charAt(0).toUpperCase() + val.slice(1).toLowerCase());
+
+		</script>
+	</head>
+	<body>
+		<h1>Exercicio 01 - String</h1>
+		<p>1. Escrever o que foi digitado em maiusculo (abc -> ABC)</p>
+		<p>2. Imprimir da forma reversa (abc -> cba)</p>
+		<p>3. Primeira letra em maisculo (abc -> ABC ou ABC -> Abc)</p>
+	</body>
+</html>

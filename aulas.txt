@@ -1,0 +1,55 @@
+Curso: AJAX
+Turma: 11089
+Professor: EDIR SZCZEPAN DUMASZAK
+
+http://satisfacao.elaborata.com.br/
+https://github.com/Vlavros/php-class-11088
+
+Git Professor: https://github.com/ecaramba/aula-ajax
+
+git init
+git add
+git commit -m "commit inicial"
+
+---------------------------------------------------------------------------------------------------
+-- Aula 01 - 25/03/19 - Segunda
+
+ecmascript: https://pt.wikipedia.org/wiki/ECMAScript
+ecma: empresa que padroniza o javascript
+es6 x es2015: https://medium.com/@matheusml/o-guia-do-es6-tudo-que-voc%C3%AA-precisa-saber-8c287876325f
+
+https://medium.com/iclinic/es6-es2015-o-que-mudou-c22d9308f52d
+
+w3schools: https://www.w3schools.com/js/
+
+https://developer.mozilla.org/pt-BR/
+
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript
+
+Livros:
+https://www.casadocodigo.com.br/
+https://www.casadocodigo.com.br/products/livro-javascript-jquery
+
+Javascript eloquente
+
+https://jsbooks.revolunet.com/
+
+https://www.amazon.com.br/Secrets-JavaScript-Ninja-Second-Resig/dp/1617292850?tag=goog0ef-20&smid=A1ZZFT5FULY4LN&ascsubtag=go_1494986073_58431735035_285514469186_pla-485032980911_c_
+
+https://www.travessa.com.br/segredos-do-ninja-javascript/artigo/abd9e114-405c-48d1-a843-ddaee9d064bb?pcd=041&gclid=EAIaIQobChMIitLG7q2e4QIVz4KzCh3reAyHEAYYBCABEgIzUfD_BwE
+
+Guia: (como aprender JavaScript)
+https://jstherightway.org/pt-br/
+
+---------------------------------------------------------------------------------------------------
+Aula 02 - 26/03/19 - Terça
+
+---------------------------------------------------------------------------------------------------
+Aula 03 - 27/03/19 - Quarta
+
+Webkit-> chrome -> renderiza o html e css
+gecko -> monzila -> -
+
+V8 -> chrome -> executa o JS
+spidermonkey -> mozilla -> -
+
