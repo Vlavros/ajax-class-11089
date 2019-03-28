@@ -43,6 +43,7 @@ https://jstherightway.org/pt-br/
 
 ---------------------------------------------------------------------------------------------------
 Aula 02 - 26/03/19 - Terça
+DOM
 
 ---------------------------------------------------------------------------------------------------
 Aula 03 - 27/03/19 - Quarta
@@ -52,4 +53,21 @@ gecko -> monzila -> -
 
 V8 -> chrome -> executa o JS
 spidermonkey -> mozilla -> -
+
+---------------------------------------------------------------------------------------------------
+Aula 04 - 28/03/19 - Quinta
+
+https://www.chartjs.org/
+
+https://d3js.org/
+
+PHP Framework: https://pt.wikipedia.org/wiki/Symfony
+https://laravel.com/ - framework mais simples
+
+https://github.com/uhub/awesome-php
+
+IDE: https://code.visualstudio.com/
+
+
+
 
