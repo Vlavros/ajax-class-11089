@@ -68,6 +68,8 @@ https://github.com/uhub/awesome-php
 
 IDE: https://code.visualstudio.com/
 
+cd dowloads ls
+
 
 
 

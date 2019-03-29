@@ -6,13 +6,34 @@
     <title>Aula 04 - 28/03/2019</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #letreiro{
+            border: 1px solid black;
+            width: 50%;
+            margin-left:auto;
+            margin-right:auto;
+            font-size: xx-large;
+            font-family: monospace;
+            padding: 12px;
+            text-align: center;
+            color: royalblue;
+            background-color: greenyellow;
+            overflow: hidden;
+            /*text-overflow: ellipsis;*/
+            white-space: nowrap; 
+        }
+    </style>
+
 </head>
 <body>
-    <div>TODO write content</div>
+    <div id="letreiro">
+        Próxima parada Estação Guadalupe, cuidado com furtos no interior do veículo.
+    </div>
+
+    <button onclick="ligar()">Ligar</button>
     
     <script type="text/javascript" src="./lib/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="./js/aula-04.js"></script>
-    
     
 </body>
 
