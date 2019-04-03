@@ -114,3 +114,5 @@ Validar telefone: (99)99999-9999
 https://www.w3schools.com/jsref/jsref_obj_regexp.asp
 
 ^[a-z0-9.-]+@[0-9a-z-]+.[a-z.]*$
+
+^[0-9a-z.-]+@{1}(([0-9a-z])+[.]{1})+[0-9a-z]+$
