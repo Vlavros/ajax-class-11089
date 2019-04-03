@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+    <head>
+        <title>Aula 06 - Cadastro de Alunos - 01/04/19</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+        
+            .tabela{
+                border: 1px solid black;
+                margin-top: 20px;
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            .tabela thead th {
+                background-color: cornflowerblue;
+                color: white;
+                text-align: center;
+                font-weight: bold;
+                padding: 4px;
+            }
+
+            .tabela tbody td, .tabela thead th {
+                border: 1px solid black;
+                padding: 4px;
+            }
+
+            fieldset {
+                width: 50%;
+                
+            }
+
+            label {
+                width: 120px;
+                display: inline-block;
+                padding: 5px;
+            }
+
+        </style>
+
+        <link rel="stylesheet" href="./lib/jquery-ui/jquery-ui.structure.min.css">
+        <link rel="stylesheet" href="./lib/jquery-ui/jquery-ui.theme.min.css">
+
+        <script type="text/javascript" src="./lib/jquery-3.3.1.js"></script>
+        <script type="text/javascript" src="./js/aula-07.js"></script>
+
+        <script type="text/javascript" src="./lib/jquery-ui/jquery-ui.min.js"></script>
+
+
+
+    </head>
+
+    <body>
+
+        <h1>Cadastro de Alunos</h1>
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label>Nome</label>
+            <input type="text" id="nome" />
+            <br>
+
+            <label>Email</label>
+            <input type="text" id="email" />
+            <br>
+
+            <label>Telefone</label>
+            <input type="text" id="telefone"/>
+            <br>
+
+            <label>Sexo</label>
+            <input type="radio" name="sexo" value="Masculino"/> Masculino
+            <input type="radio" name="sexo" value="Feminino"/> Feminino
+            <br>
+
+            <label>Data Nascimento</label>
+            <input type="text" id="data" />
+            <br><br>
+
+            <button id="cadastrar">Cadastrar</button>
+
+        </fieldset>
+
+        <table class="tabela">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Telefone</th>
+                    <th>Sexo</th>
+                    <th>Data de Nascimento</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                    <tr>
+                        <td>Edir</td>
+                        <td>edir@prof.com</td>
+                        <td>12-2222-3333</td>
+                        <td>Masculino</td>
+                        <td>22/02/2002</td>
+                    </tr>
+            </tbody>
+        </table>
+
+    </body>
+</html>

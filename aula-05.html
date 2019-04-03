@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>Aula 05 - JQuery - 29/03/19</title>
+        <script type="text/javascript" src="./lib/jquery-3.3.1.js"></script>
+
+        <style>
+            h1 {
+                color: red;
+            }
+
+            h2 {
+                color:blue;
+            }
+
+            #segundo {
+                color: green;
+            }
+            .amarelo {
+                background-color: yellow;
+            }
+            p.amarelo {
+                border: 1px solid black;
+            }
+        </style>
+
+        <script type="text/javascript">
+           
+           //Executa somente quando o document estiver carregado
+           $(document).ready(function(){
+            // $(function(){ <- forma resumida
+                var el = $("h2, .amarelo").click(function(val){
+                    alert("oi");
+                }); // fim do click
+
+                //altera a cor pelo select
+                $("#cores").change(function(){
+                    console.log( $(this).val() );
+
+                    $("#segundo").css("color", $(this).val() );
+                }); //fim change
+
+                $("#add").click(function(){
+
+                    var cor = "<option>"+ $("#cor").val() +"</option>"
+                    $("#cores").append(cor);
+
+                }); //fim do click
+
+           }); // fim ready
+
+
+        </script>
+
+    </head>
+
+    <body>
+        <h1 class="amarelo">Aula Jquery</h1>
+
+        <h2 id="segundo">Segundo texto</h2>
+
+        <h2 class="amarelo">Terceiro texto</h2>
+
+        <p class="amarelo">texto de paragrafo</p>
+
+        Selecione a cor:
+
+        <select id="cores">
+            <option>red</option>
+            <option>blue</option>
+            <option>salmon</option>
+        </select>
+
+        Digite a cor: 
+        <input type="text" id="cor" />
+        <button id="add">Add</button>
+       
+    </body>
+</html>

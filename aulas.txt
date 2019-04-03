@@ -70,6 +70,47 @@ IDE: https://code.visualstudio.com/
 
 cd dowloads ls
 
+---------------------------------------------------------------------------------------------------
+Aula 05 - 29/03/19 - Sexta
+
+JQUERY
+
+---------------------------------------------------------------------------------------------------
+Aula 06 - 01/04/19 - Segunda
+
+Angular JS Pseudo Lingauegm
+https://pt.wikipedia.org/wiki/AngularJS
+
+Vue JS
+https://en.wikipedia.org/wiki/Vue.js
+
+JavaScript Backend
+https://pt.wikipedia.org/wiki/Node.js
+
+---------------------------------------------------------------------------------------------------
+Aula 07 - 02/04/19 - Terça
+
+Expressões regulares:
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Regular_Expressions
+
+Testar as Expressões regulares:
+https://regex101.com/
+
+Para CEP: 99999-999
+[0-9]{5}-[0-9]{3}
+
+http://emailregex.com/
+
+Validar e-mail:
+^[a-z0-9.-]*@[0-9a-z-]*.[a-z.]*
+^  -> obriga a começar com
+[] -> lista de caracteres
+*  -> quantidade de caracteres aceitos
+
+Validar telefone: (99)99999-9999
+^\([0-9]{2}\)[0-9]{5}-[0-9]{4}$
 
 
+https://www.w3schools.com/jsref/jsref_obj_regexp.asp
 
+^[a-z0-9.-]+@[0-9a-z-]+.[a-z.]*$
