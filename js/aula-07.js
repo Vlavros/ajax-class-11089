@@ -2,9 +2,10 @@
 
 $(document).ready(function(){
 
-    $("#data").datepicker();
+    //$("#data").datepicker();
+    $("#data").datepicker();//.setDefaults( $.datepicker.regional[ "pt-BR" ] );
     $("#data").datepicker("option", "dateFormat", "dd/mm/yy");
-    $("#data").datepicker( "option", $.datepicker.regional["fr"]);
+    
 
     $("#cadastrar").click(function(){
  
@@ -58,5 +59,15 @@ $(document).ready(function(){
          
  
     }); //fim do click
+
+    $("#telefone").keydown(function(ev){
+        console.log(ev.keyCode);
+
+        var regex = /[0-9]/;
+
+        if(regex.test(ev.key) == false && ev.keyCode !== 8) {
+            return false;
+        }        
+    });
  
  }); //fim do ready

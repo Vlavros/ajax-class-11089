@@ -116,3 +116,35 @@ https://www.w3schools.com/jsref/jsref_obj_regexp.asp
 ^[a-z0-9.-]+@[0-9a-z-]+.[a-z.]*$
 
 ^[0-9a-z.-]+@{1}(([0-9a-z])+[.]{1})+[0-9a-z]+$
+
+---------------------------------------------------------------------------------------------------
+Aula 08 - 03/04/19 - Quarta
+
+https://aurelio.net/regex/
+
+git config user.email "vlad@mail.com"
+git config user.name "Vladimir"
+
+git fetch -> pega as informações do servidor
+git pull  -> baixar alterações
+git commit -m "Mensagem"
+git push
+
+git e banch
+Criar nova branch:
+git checkout -b "novo"
+
+pull request
+
+git checkout master
+
+git merge novo
+
+git flow: forma sofisticada de organizar
+
+https://br.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
+
+keydown -> para validação
+keyup -> para teclas de atalho
+
+nl2br php -> converter os /r para <br>
