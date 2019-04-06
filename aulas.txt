@@ -148,3 +148,22 @@ keydown -> para validação
 keyup -> para teclas de atalho
 
 nl2br php -> converter os /r para <br>
+
+---------------------------------------------------------------------------------------------------
+Aula 09 - 04/04/19 - Quinta
+Projeto novo de PetShop - Agendamento
+
+---------------------------------------------------------------------------------------------------
+Aula 10 - 05/04/19 - Sexta
+
+api -> backend
+
+http://127.0.0.1/vlavros/ajax-class-11089/agendamento/index.html
+
+Conexão com o banco de dados com PDO:
+https://www.php.net/manual/pt_BR/book.pdo.php
+
+get  -> chamada pela url
+post -> por formulário geralmente é post
+
+Moments.js -> biblioteca para formatar datas

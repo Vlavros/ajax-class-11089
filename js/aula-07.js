@@ -70,4 +70,9 @@ $(document).ready(function(){
         }        
     });
  
+   // deleta o registro da tabela
+   $("tbody").on("click", ".del", function(){
+        $(this).parent().parent().remove();
+    }); 
+
  }); //fim do ready

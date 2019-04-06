@@ -1,0 +1,114 @@
+
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>PetShop - Agendamento</title>
+
+    <!-- Bootstrap core CSS -->
+   <link href="css/bootstrap.css" rel="stylesheet">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark static-top">
+  <a class="navbar-brand" href="#">PetShop</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Adicionar</a>
+      </li>
+      
+    </ul>
+    
+  </div>
+</nav>
+
+<main role="main" class="container">
+
+    <h1>Serviços agendados</h1>
+
+    <div class="card mb-4">
+        <div class="card-body ">
+
+        <form class="form-inline">
+            <div class="form-group ">
+                <select id="filtro-servico" class="form-control">
+                    <option value="0"> -- Serviço --</option>
+                </select>
+            </div>
+
+            <div class="form-group ">
+                <select id="filtro-prof" class="form-control">
+                    <option value="0"> -- Profissional --</option>
+                </select>
+            </div>
+        </form>
+        </div>
+      </div>
+
+    <table class="table">
+        <thead class="thead-light">
+            <tr>
+                <th>Data</th>
+                <th>Status</th>
+                <th>Cliente</th>
+                <th>Serviço</th>
+                <th>Preço</th>
+                <th>Profissional</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+
+        <tbody id="regAgendamentos">
+            <tr>
+                <td>12/12/12</td>
+                <td>Confirmado</td>
+                <td>Maria</td>
+                <td>Banho e Tosa</td>
+                <td>R$ 30,00</td>
+                <td>José</td>
+                <td>
+                    <span class="btn btn-primary">Confirmar</span>
+                    <span class="btn btn-danger">Cancelar</span>
+                    <span class="btn btn-success">Realizado</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</main><!-- /.container -->
+
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+<script type="text/javascript" src="js/listagem.js"></script>
+
+</html>
