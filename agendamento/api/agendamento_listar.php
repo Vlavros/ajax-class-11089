@@ -1,34 +1,31 @@
 <?php
 
 
-$sDriver = "mysql";
-$sHost = "127.0.0.1";
-$iPort = 3306;
-$sUser = "root";
-$sPass = "";
-$sDatabase = "petshop";
+require_once 'classConnect.php';
 
-$sDSN = "$sDriver:dbname=$sDatabase;host=$sHost;charset=utf8"; //'mysql:dbname=testdb;host=127.0.0.1;charset=utf8';
+$oConnect = new Connect();
+$oPDO = $oConnect->conectar();
 
-$oPDO = new PDO($sDSN,$sUser,$sPass);
 
-//var_dump($oPDO);
 
-$sSelect = "SELECT * FROM `agendatemntos`";
+$sSelect  = "SELECT a.id, a.datahora, a.cliente, a.status, a.preco, b.nome as profissional, c.nome as servico FROM agendamentos as a INNER JOIN profissionais as b ON (a.profissional = b.id) INNER JOIN servicos as c ON (a.servico = c.id) ";
+$sSelect .= " WHERE 1=1 ";
+
+if(isset($_GET["servico"]) && !empty($_GET['servico'])) {
+    $sServico = $oConnect->mysql_escape_mimic($_GET["servico"]);
+    $sSelect .= "   AND a.servico = $sServico ";
+}
+
+if(isset($_GET["profissional"]) && !empty($_GET['profissional'])) {
+    $sProfisisonal = $oConnect->mysql_escape_mimic($_GET["profissional"]);
+    $sSelect .= "   AND a.profissional = $sProfisisonal ";
+}
+
+$sSelect .= " ORDER BY a.datahora ";
 
 $oRet = $oPDO->query($sSelect);
 $oFetch = $oRet->fetchAll(PDO::FETCH_ASSOC);
 
-/*
-var_dump($oRet);
-
-echo "<pre>";
-var_dump($oFetch);
-echo "</pre>";
-*/
-
 echo json_encode($oFetch);
-
-
 
 ?>

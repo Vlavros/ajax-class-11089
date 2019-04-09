@@ -14,11 +14,22 @@ class Connect {
     
     private $oPDO;
 
-    function conectar() : object {
-        $sDSN = "$sDriver:dbname=$sDatabase;host=$sHost;charset=utf8";
-        $oPDO = new PDO($sDSN,$sUser,$sPass);
-        return $oPDO;
+    public function conectar() : object{
+        $this->sDSN = "{$this->sDriver}:dbname={$this->sDatabase};host={$this->sHost};charset={$this->sCharset}";
+        $this->oPDO = new PDO($this->sDSN,$this->sUser,$this->sPass);
+        return $this->oPDO;
     }
+
+    function mysql_escape_mimic($inp) {
+        if(is_array($inp))
+            return array_map(__METHOD__, $inp);
+  
+        if(!empty($inp) && is_string($inp)) {
+            return str_replace(array('\\', "\0", "\n", "\r", "'", '"', "\x1a"), array('\\\\', '\\0', '\\n', '\\r', "\\'", '\\"', '\\Z'), $inp);
+        }
+  
+        return $inp;
+    }    
 
 }
 

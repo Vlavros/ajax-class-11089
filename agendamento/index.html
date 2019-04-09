@@ -11,6 +11,7 @@
 
     <!-- Bootstrap core CSS -->
    <link href="css/bootstrap.css" rel="stylesheet">
+   <link href="lib/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
 
 
     <style>
@@ -44,7 +45,7 @@
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Adicionar</a>
+        <a class="nav-link" href="#" data-toggle="modal" data-target="#modalContactForm">Adicionar</a>
       </li>
       
     </ul>
@@ -59,15 +60,15 @@
     <div class="card mb-4">
         <div class="card-body ">
 
-        <form class="form-inline">
+        <form class="form-inline" id="frmFiltros"> 
             <div class="form-group ">
-                <select id="filtro-servico" class="form-control">
+                <select id="filtro-servico" name="servico" class="form-control">
                     <option value="0"> -- Serviço --</option>
                 </select>
             </div>
 
             <div class="form-group ">
-                <select id="filtro-prof" class="form-control">
+                <select id="filtro-prof" name="profissional" class="form-control">
                     <option value="0"> -- Profissional --</option>
                 </select>
             </div>
@@ -75,7 +76,7 @@
         </div>
       </div>
 
-    <table class="table">
+    <table class="table" id="table-agendamento">
         <thead class="thead-light">
             <tr>
                 <th>Data</th>
@@ -89,7 +90,7 @@
         </thead>
 
         <tbody id="regAgendamentos">
-            <tr>
+            <!--tr>
                 <td>12/12/12</td>
                 <td>Confirmado</td>
                 <td>Maria</td>
@@ -101,14 +102,91 @@
                     <span class="btn btn-danger">Cancelar</span>
                     <span class="btn btn-success">Realizado</span>
                 </td>
-            </tr>
+            </tr-->
         </tbody>
     </table>
 
 </main><!-- /.container -->
 
+<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Adicionar agendamento</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal" id="frmAddAgendamento">
+          <fieldset>
+          
+          <!-- Text input-->
+          <div class="form-group">
+            <label class=" control-label" for="datahora">Data e hora do serviço</label>  
+            <div class="">
+            <input id="datahora" name="datahora" type="text" placeholder="" class="form-control input-md" required="">
+              
+            </div>
+          </div>
+          
+          <!-- Text input-->
+          <div class="form-group">
+            <label class=" control-label" for="cliente">Cliente</label>  
+            <div class="">
+            <input id="cliente" name="cliente" type="text" placeholder="" class="form-control input-md" required="">
+              
+            </div>
+          </div>
+          
+          <!-- Text input-->
+          <div class="form-group">
+            <label class=" control-label" for="preco">Valor Cobrado</label>  
+            <div class="">
+            <input id="preco" name="preco" type="text" placeholder="" class="form-control input-md">
+              
+            </div>
+          </div>
+          
+          <!-- Select Basic -->
+          <div class="form-group">
+            <label class=" control-label" for="profissional">Profissional</label>
+            <div class="">
+              <select id="profissional" name="profissional" class="form-control">
+                <option value="0">-- Profissional --</option>
+              </select>
+            </div>
+          </div>
+          
+          <!-- Select Basic -->
+          <div class="form-group">
+            <label class=" control-label" for="servico">Serviço</label>
+            <div class="">
+              <select id="servico" name="servico" class="form-control">
+                <option value="0">-- Serviço --</option>
+              </select>
+            </div>
+          </div>
+          
+          </fieldset>
+          </form>                         
+
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-primary" id="btnAdd">Adicionar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
 <script type="text/javascript" src="js/listagem.js"></script>
+
+<script type="text/javascript" src="lib/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="lib/bootstrap-datepicker/locales/bootstrap-datepicker.pt-BR.min.js"></script>
+
+<script type="text/javascript" src="lib/jquery-mask/jquery.mask.min.js"></script>
 
 </html>
