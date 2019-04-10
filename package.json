@@ -1,0 +1,26 @@
+{
+  "name": "ajax-class-11089",
+  "version": "1.0.0",
+  "description": "Aulas",
+  "main": "aula.node.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vlavros/ajax-class-11089.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vlavros/ajax-class-11089/issues"
+  },
+  "homepage": "https://github.com/Vlavros/ajax-class-11089#readme"
+}

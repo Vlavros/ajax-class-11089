@@ -75,7 +75,25 @@ $(document).ready(function(){
     carregarAgendamentos();
 
     $( "#btnAdd" ).click(function() {
-        console.log($("#frmAddAgendamento").serialize());
+        //console.log($("#frmAddAgendamento").serialize());
+        var preco = $("#frmAddAgendamento #preco").val();
+        preco = preco.replace(',', '.');  
+        
+        var form = {
+            datahora: $("#frmAddAgendamento #datahora").val(),
+            cliente: $("#frmAddAgendamento #cliente").val(),
+            servico: $("#frmAddAgendamento #servico").val(),
+            preco: preco,
+            profissional: $("#frmAddAgendamento #profissional").val()
+        };
+
+        $.post('./api/agendamento_adicionar.php',form,function(retorno){
+            //console.log(retorno);
+            if(retorno == "ok") {
+                alert("deu certo");
+            }
+        }); 
+
     });
 
     $('#datahora').datepicker({

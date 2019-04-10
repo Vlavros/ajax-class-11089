@@ -181,3 +181,40 @@ https://bootsnipp.com/ -> Pedaços de código feitos para o bootstrap
 
 datapicker
 https://uxsolutions.github.io/bootstrap-datepicker/?markup=input&format=dd%2Fmm%2Fyyyy&weekStart=&startDate=today&endDate=&startView=0&minViewMode=0&maxViewMode=4&todayBtn=false&clearBtn=false&language=pt-BR&orientation=auto&multidate=&multidateSeparator=&daysOfWeekDisabled=0&daysOfWeekDisabled=6&todayHighlight=on&keyboardNavigation=on&forceParse=on#sandbox
+
+---------------------------------------------------------------------------------------------------
+Aula 12 - 09/04/19 - Terça
+
+## Referencias
+
+- https://jstherightway.org/pt-br/
+- https://www.casadocodigo.com.br/products/livro-javascript-jquery
+- https://braziljs.github.io/eloquente-javascript/
+- https://github.com/sorrycc/awesome-javascript
+- https://github.com/petk/awesome-jquery
+- https://jsbooks.revolunet.com/
+
+https://medium.com/by-vinicius-reis/o-que-e-react-ng2-auleria-vue-e34b0c77b5a1
+
+Framework x Biblioteca
+Framework: coletânea de bibliotecas
+
+https://www.valuecoders.com/blog/technology-and-apps/vue-js-comparison-angular-react/
+Professor recomenda vue
+
+NODE: lib para nodejs
+https://expressjs.com/pt-br/
+
+https://nodejs.org/en/
+Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
+
+
+usar o nodejs
+abrir terminal -> node aula.node.js
+
+"plugins do node"  https://www.npmjs.com/
+
+http socket
+
+https://trackjs.com/
+
