@@ -128,8 +128,8 @@
           <div class="form-group">
             <label class=" control-label" for="datahora">Data e hora do serviço</label>  
             <div class="">
-            <input id="datahora" name="datahora" type="text" placeholder="" class="form-control input-md" required="">
-              
+              <input id="datahora" name="datahora" type="text" placeholder="" class="form-control input-md">
+              <div class="invalid-feedback">O campo data e hora é obrigatório.</div>
             </div>
           </div>
           
@@ -137,8 +137,8 @@
           <div class="form-group">
             <label class=" control-label" for="cliente">Cliente</label>  
             <div class="">
-            <input id="cliente" name="cliente" type="text" placeholder="" class="form-control input-md" required="">
-              
+              <input id="cliente" name="cliente" type="text" placeholder="" class="form-control input-md">
+              <div class="invalid-feedback">O campo cliente é obrigatório.</div>  
             </div>
           </div>
           
@@ -146,8 +146,8 @@
           <div class="form-group">
             <label class=" control-label" for="preco">Valor Cobrado</label>  
             <div class="">
-            <input id="preco" name="preco" type="text" placeholder="" class="form-control input-md">
-              
+              <input id="preco" name="preco" type="text" placeholder="" class="form-control input-md">
+              <div class="invalid-feedback">O campo valor é obrigatório.</div>  
             </div>
           </div>
           
@@ -158,6 +158,7 @@
               <select id="profissional" name="profissional" class="form-control">
                 <option value="0">-- Profissional --</option>
               </select>
+              <div class="invalid-feedback">O profissional é obrigatório.</div>  
             </div>
           </div>
           
@@ -168,18 +169,19 @@
               <select id="servico" name="servico" class="form-control">
                 <option value="0">-- Serviço --</option>
               </select>
+              <div class="invalid-feedback">O campo serviço é obrigatório.</div>  
             </div>
           </div>
           
-          </fieldset>
-                                 
+          </fieldset>                                
 
       </div>
+    
       <div class="modal-footer d-flex justify-content-center">
         <!--button class="btn btn-primary" id="btnAdd" type="submit">Adicionar</button-->
-        <button class="btn btn-primary" id="btnAdd">Adicionar</button>
+        <button class="btn btn-primary" type="button" id="btnAdd">Adicionar</button>
       </div>
-    </form>  
+    </form>
     </div>
   </div>
 </div>

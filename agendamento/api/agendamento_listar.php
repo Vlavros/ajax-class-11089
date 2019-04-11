@@ -21,7 +21,7 @@ if(isset($_GET["profissional"]) && !empty($_GET['profissional'])) {
     $sSelect .= "   AND a.profissional = $sProfisisonal ";
 }
 
-$sSelect .= " ORDER BY a.datahora ";
+$sSelect .= " ORDER BY a.datahora DESC ";
 
 $oRet = $oPDO->query($sSelect);
 $oFetch = $oRet->fetchAll(PDO::FETCH_ASSOC);

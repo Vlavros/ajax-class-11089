@@ -76,24 +76,50 @@ $(document).ready(function(){
 
     $( "#btnAdd" ).click(function() {
         //console.log($("#frmAddAgendamento").serialize());
+
+        var valido = true;
+
+        $("#frmAddAgendamento input[type=text]").each(function(ind, el){
+            if($(el).val() == "") {
+                $(el).addClass('is-invalid');
+                valido = false;
+            }
+        });
+
+        if(valido == false) {
+            return false;            
+        }
+        
         var preco = $("#frmAddAgendamento #preco").val();
+        var datahora = $("#frmAddAgendamento #datahora").val();
+        var cliente = $("#frmAddAgendamento #cliente").val();
+        var servico = $("#frmAddAgendamento #servico").val();
+        var profissional = $("#frmAddAgendamento #profissional").val();
+
         preco = preco.replace(',', '.');  
         
         var form = {
-            datahora: $("#frmAddAgendamento #datahora").val(),
-            cliente: $("#frmAddAgendamento #cliente").val(),
-            servico: $("#frmAddAgendamento #servico").val(),
+            datahora: datahora,
+            cliente: cliente,
+            servico: servico,
             preco: preco,
-            profissional: $("#frmAddAgendamento #profissional").val()
+            profissional: profissional
         };
 
         $.post('./api/agendamento_adicionar.php',form,function(retorno){
-            //console.log(retorno);
+            console.log(retorno);
             if(retorno == "ok") {
-                alert("deu certo");
+                //window.location.reload();
+                carregarAgendamentos();
+                $("#modalContactForm").modal('hide');
             }
         }); 
+    }); //fim do click
 
+    $("#modalContactForm").on("hide.bs.modal", function(){
+        $("#frmAddAgendamento input[type=text]").val("");
+        $("#frmAddAgendamento select").val("0");
+        $("#frmAddAgendamento input[type=text]").removeClass("is-invalid");
     });
 
     $('#datahora').datepicker({

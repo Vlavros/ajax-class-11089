@@ -218,3 +218,23 @@ http socket
 
 https://trackjs.com/
 
+---------------------------------------------------------------------------------------------------
+Aula 13 - 10/04/19 - Quarta
+
+https://satisfacao.elaborata.com.br/aval
+
+Exemplos com trechos de códigos:
+https://bootsnipp.com/
+
+https://vuetifyjs.com/pt-BR/
+
+https://jqueryvalidation.org/
+
+https://bootstrap-validate.js.org/
+
+https://pt.stackoverflow.com/questions/227604/para-que-servem-os-atributos-data-target-e-data-toggle
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes
+
+Web design
+https://tableless.com.br/
